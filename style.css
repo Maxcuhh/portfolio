@@ -632,3 +632,7 @@ body {
 .load-more:hover {
     background-color: rgb(98, 255, 255);
 }
+
+.break_line {
+    display: flex;
+}
