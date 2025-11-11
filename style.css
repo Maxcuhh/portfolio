@@ -634,5 +634,5 @@ body {
 }
 
 .break_line {
-    display: flex;
+    display: none;
 }
