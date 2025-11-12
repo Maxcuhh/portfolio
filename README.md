@@ -1,3 +1,3 @@
 # portofolio
 
-js a casual normal portofolio c:
+js a casual portofolio c:

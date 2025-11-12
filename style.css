@@ -1,9 +1,9 @@
 /* Write your CSS code here */:root {
     --border-ten: 10px;
-    --eqpmnt: 50%;
+    --eqpmnt: 45%;
     --edtng: 75%;
     --rtchng: 40%;
-    --mrktng: 100%;
+    --mrktng: 70%;
     --yellow: #cca5c1;
     --sStatsCol: #b45f5f;
 }
@@ -27,7 +27,6 @@ body {
     width: 900px;
     margin: 70px 0px;
     border-radius: var(--border-ten);
-    box-shadow: 0px 5px 20px 3px rgba(33, 32, 112, 0.61);
 
     display: flex;
     flex-direction: column;
