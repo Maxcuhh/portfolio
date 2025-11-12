@@ -25,7 +25,7 @@ body {
 .main-container {
     min-width: 300px;
     width: 900px;
-    margin: 70px 0px;
+    margin: 70px 60px;
     border-radius: var(--border-ten);
     box-shadow: 0px 5px 20px 3px rgba(33, 32, 112, 0.61);
 
