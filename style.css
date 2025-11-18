@@ -1,9 +1,11 @@
 /* style.css */
 body {
-  margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #fff7f3;
-  color: #3a2f2a;
+    background-image: https://i.pinimg.com/1200x/47/a3/55/47a35578f64cb1ca753cbbaa3cf00bba.jpg; 
+    repeat: no-repeat;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fff7f3;
+    color: #3a2f2a;
 }
 
 #root {
