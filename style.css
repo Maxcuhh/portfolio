@@ -8,7 +8,7 @@ body {
 }
 
 .overlay {
-  background: rgba(255, 248, 240, 0.85);
+
   min-height: 100vh;
   padding: 3rem;
   background-image: url('https://i.pinimg.com/1200x/47/a3/55/47a35578f64cb1ca753cbbaa3cf00bba.jpg');
