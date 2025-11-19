@@ -3,14 +3,18 @@
 body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: url("https://i.pinimg.com/1200x/47/a3/55/47a35578f64cb1ca753cbbaa3cf00bba.jpg") center/cover fixed;
   color: #3a2f2a;
+  background-color: #fff7f3;
 }
 
 .overlay {
   background: rgba(255, 248, 240, 0.85);
   min-height: 100vh;
   padding: 3rem;
+  background-image: url('https://i.pinimg.com/1200x/47/a3/55/47a35578f64cb1ca753cbbaa3cf00bba.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -38,7 +42,7 @@ h1 {
 }
 
 .card {
-  background: #fff7f9;
+  background: rgba(255, 247, 249, 0.95);
   border-radius: 2rem;
   padding: 2rem;
   border: 2px solid #f3ced5;
