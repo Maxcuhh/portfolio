@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Tea Timer 🍵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <h1>Tea Brewing Timer 🍃</h1>
+    <p class="intro">
+      Brew your tea perfectly! Select your tea type, set the timer, and relax while the gentle countdown begins. 🌸
+    </p>
+
+    <div class="timer-container">
+      <label for="teaType">Choose your tea:</label>
+      <select id="teaType">
+        <option value="2">Green Tea — 2 min</option>
+        <option value="3">Black Tea — 3 min</option>
+        <option value="5">Herbal Tea — 5 min</option>
+        <option value="4">Oolong Tea — 4 min</option>
+      </select>
+
+      <div class="time-display" id="timeDisplay">00:00</div>
+
+      <div class="teacup">
+        <div class="steam steam1"></div>
+        <div class="steam steam2"></div>
+        <div class="steam steam3"></div>
+        <div class="cup"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn">Start Brewing</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="teaBell" src="https://freesound.org/data/previews/522/522596_5121236-lq.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

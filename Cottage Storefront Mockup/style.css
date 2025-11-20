@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #fef1ea;
+  color: #3a2f2a;
+}
+
+.overlay {
+  min-height: 100vh;
+  padding: 3rem;
+  background-image: url('https://i.pinimg.com/736x/77/b0/8c/77b08c530db74db58515d2c998067f01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive;
+  color: #d9818f;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.25rem;
+  color: #5a463c;
+  line-height: 1.6;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: rgba(255, 247, 249, 0.95);
+  border: 2px solid #f3ced5;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: #bf7c9c;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  color: #5a463c;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.product-card button {
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 2rem;
+  background: #ffd8e4;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #ffb7c5;
+  transform: translateY(-2px);
+}

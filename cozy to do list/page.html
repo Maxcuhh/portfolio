@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cozy To-Do + Calendar — Chyaru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fireflies" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="app-header">
+      <div class="header-left">
+        <h1>Cozy Planner 🌸</h1>
+        <p class="sub">tasks • calendar • affirmations — soft & local</p>
+      </div>
+      <div class="header-right">
+        <div class="theme-row">
+          <button class="theme-btn" data-theme="pink">Pink</button>
+          <button class="theme-btn" data-theme="forest">Forest</button>
+          <button class="theme-btn" data-theme="honey">Honey</button>
+        </div>
+        <label class="dark-toggle">
+          <input id="darkToggle" type="checkbox">
+          <span>Dark</span>
+        </label>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- LEFT: tasks -->
+      <section class="panel tasks">
+        <h2>🌼 Tasks</h2>
+
+        <div class="controls-row">
+          <select id="filterSelect" aria-label="Filter tasks">
+            <option value="All">All Categories</option>
+          </select>
+
+          <div class="small-actions">
+            <button id="clearCompleted">Clear completed</button>
+            <button id="clearAll">Clear all</button>
+          </div>
+        </div>
+
+        <div class="todo-input-row">
+          <input id="taskInput" placeholder="Write a cozy task..." />
+          <select id="categorySelect"></select>
+          <button id="addTask">Add</button>
+        </div>
+
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      </section>
+
+      <!-- RIGHT: calendar + affirmations + settings -->
+      <section class="panel side">
+        <!-- Calendar -->
+        <div class="calendar-panel">
+          <h2>📅 Calendar</h2>
+          <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <div id="monthLabel"></div>
+            <button id="nextMonth">&gt;</button>
+          </div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+          <div id="dateNotes" class="date-notes"></div>
+        </div>
+
+        <!-- Affirmations -->
+        <div class="affirmation-panel">
+          <h2>🌸 Daily Affirmation</h2>
+          <div id="affirmationText" class="affirmation-text"></div>
+          <div class="affirm-actions">
+            <button id="newAffirm">Next</button>
+            <button id="copyAffirm">Copy</button>
+          </div>
+        </div>
+
+        <!-- Settings: custom categories -->
+        <div class="settings-panel">
+          <h2>⚙️ Settings</h2>
+          <div class="category-manage">
+            <label for="newCategory">Add Category</label>
+            <input id="newCategory" placeholder="e.g., Cozy" />
+            <button id="addCategory">Add</button>
+            <div class="category-list" id="categoryList"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">© 2025 Chyaru — saved locally in your browser ✨</footer>
+  </main>
+
+  <!-- audio -->
+  <audio id="addSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_79c2ed18e2.mp3?filename=pop-94319.mp3"></audio>
+  <audio id="removeSound" src="https://cdn.pixabay.com/download/audio/2021/09/06/audio_4d580b80d7.mp3?filename=magic-chime-01-91997.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

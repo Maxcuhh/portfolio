@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woodland Journal 🌲</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <h1>Woodland Journal 🌿</h1>
+    <p class="intro">
+      Write down your thoughts, memories, and cozy ideas. Tag your notes and let your journal feel like a walk in a peaceful forest. 🍃✨
+    </p>
+
+    <div class="journal-container">
+      <textarea id="entryInput" placeholder="Write a cozy note..."></textarea>
+      
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="Thoughts">Thoughts</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Mood">Mood</option>
+      </select>
+      
+      <label for="filterCategory">Filter by Category:</label>
+      <select id="filterCategory">
+        <option value="All">All</option>
+        <option value="Thoughts">Thoughts</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Mood">Mood</option>
+      </select>
+
+      <button id="saveBtn">Save Entry</button>
+
+
+
+      <ul id="entriesList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
